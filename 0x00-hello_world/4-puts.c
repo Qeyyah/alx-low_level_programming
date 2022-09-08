@@ -7,10 +7,10 @@
 *
 * Description: using the main function
 * this program prints "programming is like building a multilingual puzzle
-* Return: o
+* Return: 0
 */
 int main(void)
 {
 	puts("\"programming is like building a multilingual puzzle");
-	retrun (0)
+	retrun (0);
 }
