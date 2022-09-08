@@ -1,5 +1,4 @@
 
-
 #include <stdio.h>
 
 /**
@@ -11,6 +10,6 @@
 */
 int main(void)
 {
-	puts("\"programming is like building a multilingual puzzle");
-	retrun (0);
+	puts("\"programming is like building a mulyilingual puzzle");
+	return (0);
 }
