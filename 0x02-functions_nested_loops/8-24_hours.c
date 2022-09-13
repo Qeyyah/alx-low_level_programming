@@ -1,7 +1,7 @@
 
 #include "main.h"
 /**
-* jack_bouer - func that prints everyn minute of the day of jack bouer, starti
+* jack_bouer - function that prints everyn minute of the day of jack bouer, starti
 * n from 00:00 to 23:59, min loop counts mins, while hour loop counts hours
 * and resets mins
 * Return: 0
@@ -29,4 +29,5 @@ void jack_bauer(void)
 	}
 	hours++;
 	minutes = 0;
+}
 }
