@@ -1,22 +1,22 @@
-nclude "main.h"
+#include "main.h"
 
 /**
- * _strncmp - compares two strings
- * @s1: input 1
- * @s2: input 2
- * Return: Always 0
+ * _strcat - concatenates 2 strings
+ *
+ * @dest: destination array
+ * @src: source array
+ *
+ * Return: destination array
  */
-int _strcmp(char *s1, char *s2);
-{
-	int i = 0;
+ char *_strcat(char *dest, char *src)
+ {
+	 char *ptr = dest;
 
-	while (s1[i] != '\0' && s2[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		i++;
-	}
-	if (s1[i] == s2[i])
-		return (0);
-	return (s1[i] - s2[i]);
+	 while (*ptr ! = 0)
+		 ptr++;
+	 while (*src ! = 0)
+		 *ptr++ = *src++;
+	 *ptr = 0;
+
+	 return (dest);;
 }
