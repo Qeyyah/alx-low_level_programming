@@ -1,7 +1,5 @@
 #ifndef MAIN_H
 #define MAIN.H
-#include <stdio.h>
-/**
 
 int _putchar(char c);
 void reverse_array(int *a, int n);
