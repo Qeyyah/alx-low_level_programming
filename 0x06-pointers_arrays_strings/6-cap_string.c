@@ -1,34 +1,66 @@
-#include "main.h"
-/**
- * cap_string - capitalises all words of a string
- * @str: the string to be capitalised
- *
- * Return: pointer to string
- */
-char *cap_string(char *str)
-{
-	int index = 0;
+#include "holberton.h"
 
-	while (str[index])
+
+
+/**
+
+ * cap_string - a function that capitalizes all words of a string
+
+ * @n: input string
+
+ * Return: caps on first letter of a separator
+
+ */
+
+char *cap_string(char *n)
+
+{
+
+	int i, x;
+
+	int cap = 32;
+
+	int separators[] = {',', ';', '.', '?', '"',
+
+		 '(', ')', '{', '}', ' ', '\n', '\t'};
+
+
+
+	for (i = 0; n[i] != '\0'; i++)
+
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}' ||
-				index == 0)
-				str[index] = 32;
-		index++;
+
+		if (n[i] >= 'a' && n[i] <= 'z')
+
+		{
+
+			n[i] = n[i] - cap;
+
+		}
+
+
+
+		cap = 0;
+
+
+
+		for (x = 0; x <= 12; x++)
+
+		{
+
+			if (n[i] == separators[x])
+
+			{
+
+				x = 12;
+
+				cap = 32;
+
+			}
+
+		}
+
 	}
-	return (str);
-}
+
+	return (n);
+
