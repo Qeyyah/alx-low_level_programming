@@ -18,5 +18,5 @@ int i = n;
 	dest[r] = src[r];
 	n--;
 	}	
-	return (dest);
+return (dest);
 }
