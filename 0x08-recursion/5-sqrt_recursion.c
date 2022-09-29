@@ -17,7 +17,7 @@ if (i * i != n)
 		}
 		j = helper(i + 1, n);
 		return (j + 1);
-	}	
+	}
 	return (0);
 }
 /**
@@ -27,7 +27,7 @@ if (i * i != n)
  */
 int _sqrt_recursion(int n)
 	{
-	int i =0;
+	int i = 0;
 	if (helper(i, n) == n && n != 1)
 	return (-1);
 	return (helper(i, n));
